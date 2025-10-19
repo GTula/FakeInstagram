@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "PhantyNet",
+    "slug": "PhantyNet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo-unicolor.png",
+    "splash": {
+      "image": "./assets/images/logo-unicolor.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAA661"
+    },
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo-unicolor.png",
+        "backgroundColor": "#FAA661"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo-unicolor.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo-unicolor.png",
+          "imageWidth": 200,
+          "resizeMode": "native",
+          "backgroundColor": "#FAA661"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
