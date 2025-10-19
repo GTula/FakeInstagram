@@ -1,0 +1,35 @@
+:root {
+    /* Para fondos. */
+    --background1-color: #E68643;
+    --background2-color: #15565e;
+    --background1-lighter-color: #FAA661;
+    --background1-lighter-lighter-color: #FAB77F;
+
+    /* Para fuentes. */
+    --text1-color: #154745; 
+
+    /* Para sombras. */
+    --shadow-color: #154745; 
+
+    /* Paleta de la red social */
+    --primary-color: #3DD6BA;
+    --primary-darker-color: #33B0A3;
+
+    --secondary-color: #D6683E;
+    --secondary-darker-color: #BD4628;
+
+    /* Para fondo de inputs y para fuentes. */
+    --white-friendly-color: #fcdace;
+
+    /* Para opacidad de fuentes blancas. */
+    --white-friendly-darker-color: #c0a398; 
+
+    --success-color: #96D558;
+    --success-darker-color: #7DA644;
+
+    --error-color: #E2363F;
+    --error-darker-color: #AD2A40;
+
+    --warning-color: #EDB95E;
+    --warning-darker-color: #D49B55;
+}

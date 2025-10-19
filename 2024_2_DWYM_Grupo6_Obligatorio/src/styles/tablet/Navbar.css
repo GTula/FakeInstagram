@@ -1,0 +1,43 @@
+@import "@/styles/colors.css";
+@import "@/styles/animations.css";
+
+@media only screen and (min-width: 425px) and (max-width: 769px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        background-color: var(--background2-color);
+        width: 100vw;
+        height: 45px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        column-gap: 70px;
+    }
+
+    .navbar__go-to-my-feed-page-button {
+        background: none;
+        border: none;
+    }
+
+    .navbar__go-to-create-post-page-button {
+        background: none;
+        border: none;
+    }
+
+    .navbar__go-to-my-profile-page-button {
+        background: none;
+        border: none;
+    }
+
+    .navbar__icon {
+        font-size: 22px;
+        color: var(--white-friendly-color);
+        filter: drop-shadow(4px 4px 2px var(--shadow-color))
+    }
+
+    .navbar__text {
+        display: none;
+    }
+}

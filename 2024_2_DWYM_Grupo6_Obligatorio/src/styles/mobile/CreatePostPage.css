@@ -1,0 +1,169 @@
+@import "@/styles/colors.css";
+@import "@/styles/animations.css";
+
+@media only screen and (max-width: 425px) {
+    html {
+        font-family: Segoe, Segoe UI, Optima, Arial, sans-serif;
+
+        background-color: var(--background1-color);
+    }
+
+    .create-post-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .create-post-page__title {
+        align-self: center;
+        text-align: center;
+        margin-top: 30px;
+        text-shadow: 2px 2px 4px var(--shadow-color);
+        color: var(--primary-color);
+    }
+
+    .create-post-page__icon {
+        filter: drop-shadow(2px 2px 4px var(--shadow-color));
+    }
+
+    .create-post-form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: var(--background1-lighter-color);
+        border-radius: 10px;
+        margin: 8px;
+        row-gap: 20px;
+        color: var(--text1-color);
+    }
+
+    .create-post-form__input-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .create-post-form__input-icon {
+        position: absolute;
+        padding: 30px 0 0 8px;
+        font-size: 20px;
+    }
+
+    .create-post-form__input {
+        margin-top: 6px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: var(--white-friendly-color);
+        color: var(--text1-color);
+    }
+
+    .create-post-form__input--image {
+        margin: 38px 0 0 0;
+    }
+
+    .create-post-form__input--caption {
+        resize: none;
+        height: 25vh;
+        border-radius: 10px;
+        padding: 30px 5px 5px 5px;
+    }
+
+    .create-post-form__upload-button {
+        position: relative;
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        align-self: center;
+        background-color: var(--primary-color);
+        color: var(--text1-color);
+        font-weight: bold;
+    }
+
+    .create-post-form__upload-button:hover {
+        background-color: var(--primary-darker-color);
+        color: var(--white-friendly-darker-color);
+    }
+
+    .create-post-form__cancel-button {
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: var(--secondary-color);
+        color: var(--white-friendly-color);
+        align-self: center;
+    }
+
+    .create-post-form__cancel-button:hover {
+        background-color: var(--secondary-darker-color);
+        color: var(--white-friendly-darker-color);
+    }
+
+    .unsuccessful-upload-modal {
+        animation: popup 0.7s;
+
+        position: fixed;
+        z-index: 300;
+
+        background: rgba(0, 0, 0, 0.5);
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+        height: 100vh;
+
+        font-weight: bold;
+    }
+
+    .unsuccessful-upload-modal__message {
+        position: absolute;
+
+        font-size: 32px;
+        text-align: center;
+
+        background-color: var(--background2-color);
+        color: var(--white-friendly-color);
+
+        width: 90vw;
+        height: 90vh;
+
+        padding: 30vh 20px 0 20px;
+        border-radius: 10px;
+    }
+
+    .unsuccessful-upload-modal__icon {
+        font-size: 500%;
+
+        position: absolute;
+
+        bottom: 30%;
+
+        color: var(--error-color);
+    }
+
+    .unsuccessful-upload-modal__close-modal-button {
+        position: relative;
+
+        width: 150px;
+        height: 35px;
+
+        top: 40%;
+
+        border-radius: 10px;
+
+        background-color: var(--error-color);
+        color: var(--white-friendly-color);
+
+        font-weight: bold;
+    }
+
+    .unsuccessful-upload-modal__close-modal-button:hover {
+        background-color: var(--error-darker-color);
+        color: var(--white-friendly-darker-color);
+    }
+}
